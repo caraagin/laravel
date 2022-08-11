@@ -33,4 +33,24 @@ Route::get('/lk-tambahadmin', function () {
     return view('/superadmin/lk-tambahadmin');
 });
 
+Route::get('/admin-pengumuman', function () {
+    return view('admin/AdminPengumuman');
+});
+
+Route::get('/admin-input-poin', function () {
+    return view('admin/InputPoin');
+});
+
+Route::get('/admin-kepanitiaan', function () {
+    return view('admin/Kepanitiaan');
+});
+
+Route::get('/admin-edit-pengumuman', function () {
+    return view('admin/EditPengumuman');
+});
+
+Route::get('/admin-poin', function () {
+    return view('admin/poin');
+});
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
